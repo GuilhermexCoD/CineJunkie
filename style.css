@@ -1,0 +1,352 @@
+html {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgb(0, 0, 0);
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+body {
+  background: #000000;
+}
+
+.header {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: white;
+  font-size: large;
+}
+
+.header > div {
+  align-items: center;
+}
+
+.container_nav {
+  align-items: center;
+}
+
+nav nav {
+  margin: auto;
+}
+
+nav a {
+  margin: auto auto;
+  color: white;
+}
+
+.logo img {
+  max-width: 124px;
+  position: relative;
+  left: -10px;
+}
+
+.lancamentos {
+  background-color: #240000;
+}
+
+.headCenter {
+  text-align: center;
+}
+.headCenter h1 {
+  padding: 20px;
+  color: white;
+}
+
+.video iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.video_text {
+  height: 50%;
+  text-align: left;
+  color: white;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carousel-inner {
+  padding-bottom: 50px;
+}
+
+.carousel-control-prev {
+  float: left;
+  left: -150px;
+}
+
+.carousel-control-next {
+  float: right;
+  right: -150px;
+}
+
+p {
+  color: white;
+}
+
+p i {
+  color: gold;
+}
+
+p .categoria {
+  color: gold;
+  font-weight: bold;
+  font-size: larger;
+}
+
+p .titulo {
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.redesocial i {
+  font-size: xxx-large;
+  color: gold;
+  padding: 5px;
+}
+
+.making > div {
+  padding-bottom: 10px;
+}
+
+.checked {
+  color: gold;
+}
+
+.destaque {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+.destaque h1 {
+  display: inline;
+  color: white;
+}
+
+.destaque > div {
+  margin: 0 auto;
+  display: inline;
+  float: right;
+}
+
+.em_destaque > div {
+  padding-bottom: 50px;
+}
+
+.em_destaque img {
+  width: 250px;
+  height: 337px;
+}
+
+.entrevistas {
+  padding-bottom: 25px;
+}
+
+.novidades div {
+  padding: 10px;
+}
+
+.novidades img {
+  width: 100%;
+}
+
+.footer {
+  color: white;
+  padding: 20px;
+  width: 100%;
+}
+
+.footer p {
+  display: inline;
+  text-align: center;
+}
+
+.footer img {
+  width: 120px;
+}
+
+.bolder {
+  font-weight: bold;
+}
+
+/* Menu Mobile - Inicio */
+
+#menuToggle,
+.menu-icon {
+  display: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+  .header a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header a img {
+    position: relative;
+    left: -10px;
+  }
+
+  main {
+    padding-top: 35%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 980px) {
+  .header a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header a img {
+    position: relative;
+    left: -10px;
+  }
+
+  main {
+    padding-top: 35%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    max-width: 100% !important;
+  }
+  .container_nav {
+    display: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  main {
+    padding-top: 35%;
+  }
+
+  .menu1 {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-content: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition: background 0.5s, height 0.3s;
+    -moz-transition: background 0.5s, height 0.3s;
+    -ms-transition: background 0.5s, height 0.3s;
+    -o-transition: background 0.5s, height 0.3s;
+    transition: background 0.5s, height 0.3s;
+  }
+
+  .menu li {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    font-size: xx-large;
+    padding: 12.5px;
+  }
+
+  .menu1 a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .menu-icon {
+    width: 50px;
+    height: inherit;
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 150px;
+    line-height: 60px;
+    color: white;
+    z-index: 999;
+  }
+
+  #menuToggle:checked ~ label {
+    right: 160px;
+    -webkit-transition: right 0.3s;
+    -moz-transition: right 0.3s;
+    -o-transition: right 0.3s;
+    transition: right 0.3s;
+  }
+
+  #menuToggle:checked ~ label i:nth-child(2) {
+    display: block;
+  }
+  #menuToggle:checked ~ label i:first-child {
+    display: none;
+  }
+  #menuToggle:not(:checked) ~ label i:first-child {
+    display: block;
+  }
+  #menuToggle:not(:checked) ~ label i:nth-child(2) {
+    display: none;
+  }
+
+  #menuToggle:checked ~ nav {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+  }
+  .menu-icon i {
+    font-size: 1.7em;
+  }
+}

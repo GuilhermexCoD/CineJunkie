@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/878d6dedc9.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title xml:space="preserve">⭐Cine Junkies⭐</title>
+
+    <script>
+        document.onload = () => {
+            console.log('loaded Cine Junkies');
+            document.getElementsByClassName("flip-card").click( (event) => {
+                console.log(event);
+                
+            });
+        };
+    </script>
+</head>
+
+<body>
+    <header class="container header">
+
+        <div class="row">
+
+            <div class="logo col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logoCineJunkie.png" alt="Cine Junkie Logo">
+                </a>
+            </div>
+
+            <div class="menu col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11">
+                <div class="container_nav">
+                    <input type="checkbox" id="menuToggle">
+                    <label for="menuToggle" class="menu-icon">
+                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-times-circle"></i>
+                    </label>
+
+                    <nav class="nav menu1">
+
+                        <a class="nav-link" href="#">lancamentos</a> |
+                        <a class="nav-link" href="#">em destaque</a> |
+                        <a class="nav-link" href="#">avaliacoes</a> |
+                        <a class="nav-link" href="#">entrevistas & makingof</a> |
+                        <a class="nav-link" href="#">novidades</a>
+                        <form class="form-inline search">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                            class="fas fa-ticket-alt"></i></span>
+                                </div>
+                                <input id="pesquisa" type="text" class="form-control" placeholder="Pesquisar filme"
+                                    aria-label="Pesquisar filme" aria-describedby="basic-addon1">
+                                <button id="btnSearch"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </div>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="searching">
+            <div class="container">
+                <div id="SearchMovies" class="row">
+                    <!-- Preenchido automaticamente pelos filmes da categoria escolhida-->
+                </div>
+            </div>
+        </section>
+
+        <section class="lancamentos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 headCenter">
+                        <h1>Lançamentos</h1>
+                    </div>
+                    <div class="col-12 headCenter">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div id="carouselNowPlaying" class="carousel-inner">
+
+                                <div class="container carousel-item active">
+                                    <div class="movie row">
+                                        <div class="video col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                            <iframe
+                                                src="https://www.youtube.com/embed/EIzazUv2gtI?version=3&autoplay=1&controls=0&&showinfo=0&loop=1"
+                                                frameborder="0" allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                        <div class="video_text col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                            <h1>O Diabo de Cada Dia</h1>
+                                            <p><span class="categoria">Sinopse:</span> A história se passa no sul de
+                                                Ohio e da Virginia Ocidental, na parte rural das cidades.
+                                                The Devil All the Time narra a histórias de personagens bizarros
+                                                surgidos no final da
+                                                Segunda Guerra Mundial, nos anos 60. Willard Russell é um veterano
+                                                atormentado por não
+                                                conseguir salvar sua bonita esposa, Charlotte, de uma morte agonizante
+                                                por um câncer.
+                                                Não importa quanto sangue ele tenha depositado em seu “altar” para
+                                                salvá-la, ele não consegue.
+                                                Carl e Sandy Henderson são marido e mulher, mas também uma dupla de
+                                                serial killers.
+                                                Eles percorrem as estradas norte-americanas em busca de modelos para
+                                                fotografar e exterminar. Roy é um pastor especialista em aranhas, que
+                                                foge da lei ao lado de seu guitarrista aleijado, Theodore. E finalmente,
+                                                preso no meio disso tudo, está Arvin Eugene Russell, o filho órfão de
+                                                Willard e Charlotte. Ele cresce e busca se tornar um homem bom, mas
+                                                também violento em sua própria maneira.</p>
+                                            <p><span class="categoria">Diretor:</span> Antonio Campos</p>
+                                            <p><span class="categoria">Roteiro:</span> Donald Ray Pollock</p>
+                                            <p><span class="categoria"> Estreia:</span> 16 de setembro de 2020</p>
+                                            <p><span class="categoria"> Elenco:</span> Tom Holland
+                                                Bill Skarsgård |
+                                                Riley Keough |
+                                                Jason Clarke |
+                                                Sebastian Stan |
+                                                Haley Bennett |
+                                                Eliza Scanlen |
+                                                Mia Wasikowska |
+                                                Robert Pattinson</p>
+                                            <p><span class="categoria"> Avaliacao:</span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="movie row">
+                                        <div class="video col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                            <iframe
+                                                src="https://www.youtube.com/embed/EIzazUv2gtI?version=3&autoplay=1&controls=0&&showinfo=0&loop=1"
+                                                frameborder="0" allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                        <div class="video_text col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                            <h1>O Diabo de Cada Dia</h1>
+                                            <p><span class="categoria">Sinopse:</span> A história se passa no sul de
+                                                Ohio e da Virginia Ocidental, na parte rural das cidades.
+                                                The Devil All the Time narra a histórias de personagens bizarros
+                                                surgidos no final da
+                                                Segunda Guerra Mundial, nos anos 60. Willard Russell é um veterano
+                                                atormentado por não
+                                                conseguir salvar sua bonita esposa, Charlotte, de uma morte agonizante
+                                                por um câncer.
+                                                Não importa quanto sangue ele tenha depositado em seu “altar” para
+                                                salvá-la, ele não consegue.
+                                                Carl e Sandy Henderson são marido e mulher, mas também uma dupla de
+                                                serial killers.
+                                                Eles percorrem as estradas norte-americanas em busca de modelos para
+                                                fotografar e exterminar. Roy é um pastor especialista em aranhas, que
+                                                foge da lei ao lado de seu guitarrista aleijado, Theodore. E finalmente,
+                                                preso no meio disso tudo, está Arvin Eugene Russell, o filho órfão de
+                                                Willard e Charlotte. Ele cresce e busca se tornar um homem bom, mas
+                                                também violento em sua própria maneira.</p>
+                                            <p><span class="categoria">Diretor:</span> Antonio Campos</p>
+                                            <p><span class="categoria">Roteiro:</span> Donald Ray Pollock</p>
+                                            <p><span class="categoria"> Estreia:</span> 16 de setembro de 2020</p>
+                                            <p><span class="categoria"> Elenco:</span> Tom Holland
+                                                Bill Skarsgård |
+                                                Riley Keough |
+                                                Jason Clarke |
+                                                Sebastian Stan |
+                                                Haley Bennett |
+                                                Eliza Scanlen |
+                                                Mia Wasikowska |
+                                                Robert Pattinson</p>
+                                            <p><span class="categoria"> Avaliacao:</span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="movie row">
+                                        <div class="video col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                            <iframe
+                                                src="https://www.youtube.com/embed/EIzazUv2gtI?version=3&autoplay=1&controls=0&&showinfo=0&loop=1"
+                                                frameborder="0" allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                        <div class="video_text col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                            <h1>O Diabo de Cada Dia</h1>
+                                            <p><span class="categoria">Sinopse:</span> A história se passa no sul de
+                                                Ohio e da Virginia Ocidental, na parte rural das cidades.
+                                                The Devil All the Time narra a histórias de personagens bizarros
+                                                surgidos no final da
+                                                Segunda Guerra Mundial, nos anos 60. Willard Russell é um veterano
+                                                atormentado por não
+                                                conseguir salvar sua bonita esposa, Charlotte, de uma morte agonizante
+                                                por um câncer.
+                                                Não importa quanto sangue ele tenha depositado em seu “altar” para
+                                                salvá-la, ele não consegue.
+                                                Carl e Sandy Henderson são marido e mulher, mas também uma dupla de
+                                                serial killers.
+                                                Eles percorrem as estradas norte-americanas em busca de modelos para
+                                                fotografar e exterminar. Roy é um pastor especialista em aranhas, que
+                                                foge da lei ao lado de seu guitarrista aleijado, Theodore. E finalmente,
+                                                preso no meio disso tudo, está Arvin Eugene Russell, o filho órfão de
+                                                Willard e Charlotte. Ele cresce e busca se tornar um homem bom, mas
+                                                também violento em sua própria maneira.</p>
+                                            <p><span class="categoria">Diretor:</span> Antonio Campos</p>
+                                            <p><span class="categoria">Roteiro:</span> Donald Ray Pollock</p>
+                                            <p><span class="categoria"> Estreia:</span> 16 de setembro de 2020</p>
+                                            <p><span class="categoria"> Elenco:</span> Tom Holland
+                                                Bill Skarsgård |
+                                                Riley Keough |
+                                                Jason Clarke |
+                                                Sebastian Stan |
+                                                Haley Bennett |
+                                                Eliza Scanlen |
+                                                Mia Wasikowska |
+                                                Robert Pattinson</p>
+                                            <p><span class="categoria"> Avaliacao:</span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="em_destaque">
+            <div class="container">
+                <div class="destaque">
+                    <h1>Em destaque</h1>
+                    <div class="dropdown show">
+                        <a id="selectedGenreDisplay" class="btn btn-light dropdown-toggle " href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categoria: TODOS
+                        </a>
+
+                        <div id="movieGenreDrop" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="FeaturedMovies" class="row">
+                    <!-- Preenchido automaticamente pelos filmes da categoria escolhida-->
+                </div>
+
+                <div class="rightCorner">
+                    <button id="moreMoviesByCategory" type="button" class="btn btn-light"><i class="fas fa-plus"></i> Mostrar mais</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="entrevistas">
+            <div class="container">
+                <div class="destaque">
+                    <h1>Entrevistas & Making of</h1>
+                </div>
+
+                <div class="making row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <iframe width="280" height="157.5" src="https://www.youtube.com/embed/DroTM9SqcWI"
+                            frameborder="0" allow="accelerometer; autoplay ; clipboard-write; encrypted-media; 
+                                gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <p><span class="titulo">Maleficent </span> </p>
+                        <p><span class="categoria"> Diretor:</span> Robert Stromberg</p>
+                        <p><span class="categoria"> Roteiro:</span> Joachim Ronning</p>
+                        <p><span class="categoria"> Estreia:</span> 29/05/2014</p>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <iframe width="280" height="157.5" src="https://www.youtube.com/embed/AfjAB1R7J6o"
+                            frameborder="0" allow="accelerometer; autoplay ; clipboard-write; encrypted-media; 
+                                gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <p><span class="titulo">War for the Planet of the Apes </span> </p>
+                        <p><span class="categoria"> Diretor:</span> Matt Reeves</p>
+                        <p><span class="categoria"> Roteiro:</span> Mark Bomback</p>
+                        <p><span class="categoria"> Estreia:</span> 3/08/2017</p>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <iframe width="280" height="157.5" src="https://www.youtube.com/embed/Ufp8weYYDE8"
+                            frameborder="0" allow="accelerometer; autoplay ; clipboard-write; encrypted-media; 
+                                gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <p><span class="titulo">The Mandalorian </span> </p>
+                        <p><span class="categoria"> Diretor:</span> Dave Filoni</p>
+                        <p><span class="categoria"> Roteiro:</span> Jon Favreau</p>
+                        <p><span class="categoria"> Estreia:</span> 12/11/2019</p>
+                    </div>
+                </div>
+
+                <div class="rightCorner">
+                    <button type="button" class="btn btn-light"><i class="fas fa-plus"></i> Mostrar mais</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="novidades_sobre">
+            <div class="container">
+
+                <div class="row">
+                    <div class="novidades col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                        <div class="destaque">
+                            <h1>Novidades</h1>
+                        </div>
+
+                        <div class="container">
+                            <div class="newsCard row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <img src="img/news/batman.jpg" alt="">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <p><span class="titulo">Multiverso Batman </span> </p>
+                                    <p>Este sera o retorno de Keaton para o papel de Batman nos cinemas?</p>
+                                    <a href="#" class="badge badge-light">Mindblowing</a>
+                                    <a href="#" class="badge badge-light">DC Comics</a>
+                                    <a href="#" class="badge badge-light">Oscars</a>
+                                    <a href="#" class="badge badge-light">Vintage</a>
+                                </div>
+                            </div>
+
+                            <div class="newsCard row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <img src="img/news/bollywoord.jpg" alt="">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <p><span class="titulo">Bollywood ja superou Disney em faturamento</span> </p>
+                                    <p>Bollywood com novo lancamento Baaghi pretende desbancar Vingadores Ultimato. </p>
+                                    <a href="#" class="badge badge-light">Mindblowing</a>
+                                    <a href="#" class="badge badge-light">Outsiders</a>
+                                </div>
+                            </div>
+
+                            <div class="newsCard row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <img src="img/news/suicidesquad2.jpg" alt="">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <p><span class="titulo">Will Smith diz que nunca mais ira interpretar Deadshot
+                                        </span> </p>
+                                    <p>Will Smith neste ultimo sabado declara que nao ira mais reviver o personagem
+                                        Deadshot nos cinemas</p>
+                                    <a href="#" class="badge badge-light">Mindblowing</a>
+                                    <a href="#" class="badge badge-light">DC Comics</a>
+                                    <a href="#" class="badge badge-light">Hollywood</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="sobre col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="destaque">
+                            <h1>Sobre</h1>
+                        </div>
+
+                        <div>
+                            <p>Trazemos um site com noticias do mundo de filmes,
+                                series, entreterimento, cultura pop, cultura nerdistica.
+
+                            </p>
+                        </div>
+
+                        <div class="destaque">
+                            <h1>Editorial</h1>
+                        </div>
+
+                        <div class="editorial">
+                            <p><i class="fas fa-user"></i> <span class="categoria">Redacao: </span>
+                                Guilherme Froes Camba de Freitas
+                            </p>
+                            <p><i class="fas fa-user"></i> <span class="categoria">Pesquisa: </span>
+                                Guilherme Froes Camba de Freitas
+                            </p>
+                            <p><i class="fas fa-user"></i> <span class="categoria">Gerente Geral: </span>
+                                Guilherme Froes Camba de Freitas
+                            </p>
+                        </div>
+
+                        <div class="destaque">
+                            <h1>Redes Sociais</h1>
+                        </div>
+                        <div class="redesocial">
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-youtube-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+    <footer class="container footer">
+
+        <p>Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web - <span class="bolder">ICEI PUC Minas</span>
+        </p>
+
+        <img src="img/logoCineJunkie.png" alt="Cine Junkie Logo">
+
+    </footer>
+    
+    <!-- Bootstrap js-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Movie Js-->
+    <script src="movieApp.js"> </script>
+</body>
+
+</html>
