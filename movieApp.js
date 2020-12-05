@@ -324,9 +324,10 @@ $(document).ready( () => {
         GetMoviesByGenre(selectedGenreId,movieByGenreCount);
     });
 
-    $('#btnSearch').click(() => {
+    $('#btnSearch').click((event) => {
         let searchText = $('#pesquisa').val();
         GetSearchMovies(searchText,3);
+        event.preventDefault();
     });
 
 });
